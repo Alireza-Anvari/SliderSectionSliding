@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main
+    class="h-screen w-full overflow-hidden flex justify-center items-start sm:p-2 md:p-3 lg:w-3/4"
+  >
+    <div class="container w-full h-1/3 sm:h-1/2  lg:h-3/4  relative">
+      <div
+        id="slides"
+        class="w-full h-3/4    relative overflow-hidden"
+      >
+        <!-- effectSlide
+        index -->
+        <div id="slide1" class=" w-full h-full absolute  "  >
+          <div class=" bgImage1 h-1/4 "></div>
+          <div class=" bgImage1 h-1/4 "></div>
+          <div class=" bgImage1 h-1/4 "></div>
+          <div class=" bgImage1 h-1/4 "></div>
+          <div class="title  absolute  left-[10%] ">
+            <h1 class="text-2xl lg:text-4xl w-1/4 bg-white pl-2">slider 1</h1>
+            <p class="text-xl lg:text-3xl w-3/4 sm:w-1/2 bg-white my-1">one paragraph for slider 1 </p>
+          </div>
+</div>
+
+     <!-- effectSlide
+        index -->
+ <div id="slide2" class="  w-full h-full absolute  ">
+          <div class="  bgImage2 h-1/4 " ></div>
+          <div class="  bgImage2 h-1/4 " ></div>
+          <div class="  bgImage2 h-1/4 " ></div>
+          <div class="  bgImage2 h-1/4 " ></div>
+          <div class="  absolute  left-[10%] ">
+            <h1 class="text-2xl lg:text-4xl w-1/4 bg-white pl-2">slider 2</h1>
+            <p class="text-xl lg:text-3xl w-3/4 sm:w-1/2 bg-white my-1">one paragraph for slider 2 </p>
+          </div>
+</div>  
+
+     <!-- effectSlide
+        index -->
+<div id="slide3" class="  w-full h-full absolute   " >
+  <div class=" bgImage3   h-1/4 " ></div>
+  <div class=" bgImage3   h-1/4 " ></div>
+  <div class=" bgImage3   h-1/4 " ></div>
+  <div class=" bgImage3   h-1/4 " ></div>
+  <div class="  absolute  left-[10%] ">
+    <h1 class="text-2xl lg:text-4xl w-1/4 bg-white pl-2">slider 3</h1>
+    <p class="text-xl lg:text-3xl w-3/4 sm:w-1/2 bg-white my-1">one paragraph for slider 3 </p>
+  </div>
+</div>  
+
+     <!-- effectSlide
+        index -->
+
+<div id="slide4" class=" w-full h-full absolute  "  >
+  <div class=" bgImage4 h-1/4 "></div>
+  <div class=" bgImage4 h-1/4 "></div>
+  <div class=" bgImage4 h-1/4 "></div>
+  <div class=" bgImage4 h-1/4 "></div>
+  <div class="  absolute  left-[10%] ">
+    <h1 class="text-2xl lg:text-4xl w-1/4 bg-white pl-2">slider 4</h1>
+    <p class="text-xl lg:text-3xl w-3/4 sm:w-1/2 bg-white my-1">one paragraph for slider 4 </p>
+  </div>
+</div> 
+
+
+      </div>
+
+      <style>
+
+      </style>
+      <div id="progressBar" class="progressBar "></div>
+  <div class="controls relative">
+    <div id="thumbnails" class=" bottom-[-0px] text-white flex justify-center   w-full py-1 aspect-[12/1] z-20">
+      <div class="w-8 h-8 md:w-12 md:h-full lg:w-20 lg:h-full opacity-30 myOpacity"><img src="https://tailwindcss.com/_next/static/media/5.e8ff4aa4.jpg" class="w-full h-full object-cover	" alt=""></div>
+      <div class="w-8 h-8 md:w-12 md:h-full lg:w-20 lg:h-full opacity-30"><img src="https://tailwindcss.com/_next/static/media/beach-house.9b9ee168.jpg" class="w-full h-full object-cover	" alt=""></div>
+      <div class="w-8 h-8 md:w-12 md:h-full lg:w-20 lg:h-full opacity-30"><img src="https://www.w3schools.com/css/img_5terre_wide.jpg" class="w-full h-full object-cover	" alt=""></div>
+      <div class="w-8 h-8 md:w-12 md:h-full lg:w-20 lg:h-full opacity-30 "><img src="https://www.w3schools.com/css/img_lights.jpg" class="w-full h-full object-cover	" alt=""></div>
+    
+   </div>
+   <style>
+
+
+     #next,#prev{cursor: pointer;border-radius: 5px;}
+     #next:hover,#prev:hover{background: grey;}
+   </style>
+   <div id="next"  class="absolute bg-white left-[12px] text-slate-700	p-2 z-10  top-[50%] translate-y-[-50%] flex justify-between px-[10px] items-center" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-4 h-4 lg:w-8 lg:h-8">
+        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div id="prev"  class="absolute right-[12px] z-10 p-2 bg-white text-red-500 top-[50%] translate-y-[-50%] flex justify-between px-[10px] items-center" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-4 h-4 lg:w-8 lg:h-8 	" >
+        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+      </svg>
+    </div> 
+  </div>
+
+    </div> 
+    </main> 
+    <script src="./script.js"></script>
+</body>
+</html>
